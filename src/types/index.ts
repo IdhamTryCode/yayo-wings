@@ -27,7 +27,8 @@ export interface NavItem {
 export interface Platform {
     id: string;
     name: string;
-    icon: string;
+    icon?: string;
+    logo?: string;
     link: string;
     color: string;
     bgColor: string;

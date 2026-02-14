@@ -1,6 +1,9 @@
 import { useState, useCallback } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
+// SEO
+import { SEO } from './components/seo/SEO';
+
 // Layout
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
@@ -36,6 +39,9 @@ function App() {
 
     return (
         <>
+            {/* SEO Meta Tags */}
+            <SEO />
+
             {/* Loading Screen */}
             <AnimatePresence>
                 {isLoading && <LoadingScreen onComplete={handleLoadingComplete} />}

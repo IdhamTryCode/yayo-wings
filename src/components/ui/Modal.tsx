@@ -30,10 +30,10 @@ export function Modal({ isOpen, onClose }: ModalProps) {
                     {/* Content */}
                     <motion.div
                         className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden"
-                        initial={{ scale: 0.9, opacity: 0, y: 50 }}
-                        animate={{ scale: 1, opacity: 1, y: 0 }}
-                        exit={{ scale: 0.9, opacity: 0, y: 50 }}
-                        transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 20 }}
+                        transition={{ duration: 0.2 }}
                     >
                         {/* Header */}
                         <div className="relative bg-gradient-to-r from-primary-500 to-primary-600 px-6 py-5">
@@ -77,29 +77,31 @@ function PlatformCard({ platform, index }: { platform: Platform; index: number }
             href={platform.link}
             target="_blank"
             rel="noopener noreferrer"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.1 }}
-            whileHover={{ scale: 1.03, x: 5 }}
-            whileTap={{ scale: 0.97 }}
-            className="flex items-center gap-4 p-4 rounded-2xl border border-gray-100 hover:border-primary-200 transition-all duration-300 group"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="flex items-center gap-4 p-4 rounded-2xl border border-gray-100 hover:border-primary-200 transition-all duration-200 group"
             style={{
                 backgroundColor: platform.bgColor,
             }}
         >
-            <span className="text-3xl">{platform.icon}</span>
+            {platform.logo ? (
+                <img
+                    src={platform.logo}
+                    alt={platform.name}
+                    className="w-12 h-12 object-contain"
+                />
+            ) : (
+                <span className="text-3xl">{platform.icon}</span>
+            )}
             <div className="flex-1">
                 <h3 className="font-body font-semibold text-gray-800 group-hover:text-primary-600 transition-colors">
                     {platform.name}
                 </h3>
                 <p className="text-xs text-gray-400 font-body">Pesan via {platform.name}</p>
             </div>
-            <motion.span
-                className="text-gray-300 group-hover:text-primary-500 transition-colors"
-                whileHover={{ x: 3 }}
-            >
+            <span className="text-gray-300 group-hover:text-primary-500 transition-colors">
                 →
-            </motion.span>
+            </span>
         </motion.a>
     );
 }

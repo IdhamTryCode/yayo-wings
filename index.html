@@ -2,27 +2,143 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/logo/yayo-logo.svg" />
+    <link rel="icon" type="image/png" href="/images/logo/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="/images/logo/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Yayo Wings - Korean Wings terenak di Demak. Pesan sekarang via GoFood, GrabFood, ShopeeFood!" />
-    <meta name="keywords" content="yayo wings, korean wings, demak, ayam goreng, korean food" />
-    <meta property="og:title" content="Yayo Wings - Korean Wings Demak" />
-    <meta property="og:description" content="Korean Wings terenak di Demak. Paket mulai dari Rp 13.000!" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Yayo Wings - Korean Wings Terenak di Demak | Pesan Online Sekarang</title>
+    <meta name="description" content="Yayo Wings menyajikan Korean Wings terenak di Demak. Nikmati ayam goreng Korea dengan saus spesial. Paket hemat mulai Rp 13.000. Pesan via GoFood, GrabFood, ShopeeFood sekarang!" />
+    <meta name="keywords" content="yayo wings, korean wings, korean fried chicken, ayam goreng korea, demak, kuliner demak, makanan korea, wings, ayam goreng, gofood demak, grabfood demak, shopeefood demak, makanan enak di demak" />
+    <meta name="author" content="Yayo Wings" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://yayowings.com/" />
+    
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta property="og:locale" content="id_ID" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/images/hero/hero-bg.webp" />
+    <meta property="og:title" content="Yayo Wings - Korean Wings Terenak di Demak | Pesan Online Sekarang" />
+    <meta property="og:description" content="Nikmati Korean Wings terenak di Demak dengan saus spesial. Paket hemat mulai Rp 13.000. Tersedia di GoFood, GrabFood, dan ShopeeFood!" />
+    <meta property="og:url" content="https://yayowings.com/" />
+    <meta property="og:site_name" content="Yayo Wings" />
+    <meta property="og:image" content="/images/hero/hero.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Yayo Wings - Korean Wings Terenak di Demak" />
+    
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Yayo Wings - Korean Wings Demak" />
-    <meta name="twitter:description" content="Korean Wings terenak di Demak. Paket mulai dari Rp 13.000!" />
+    <meta name="twitter:title" content="Yayo Wings - Korean Wings Terenak di Demak" />
+    <meta name="twitter:description" content="Nikmati Korean Wings terenak di Demak. Paket hemat mulai Rp 13.000. Pesan sekarang!" />
+    <meta name="twitter:image" content="/images/hero/hero.png" />
+    <meta name="twitter:image:alt" content="Yayo Wings - Korean Wings Terenak di Demak" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#FF6B35" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Yayo Wings" />
+    
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <title>Yayo Wings - Korean Wings Demak</title>
+    
+    <!-- Structured Data - Restaurant -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Restaurant",
       "name": "Yayo Wings",
-      "description": "Korean Wings terenak di Demak",
+      "description": "Korean Wings terenak di Demak dengan saus spesial dan harga terjangkau",
+      "url": "https://yayowings.com/",
+      "telephone": "+62 813-2906-4923",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Teuku Umar, Bogorame",
+        "addressLocality": "Demak",
+        "addressRegion": "Jawa Tengah",
+        "postalCode": "59511",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-6.8945",
+        "longitude": "110.6389"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "10:00",
+          "closes": "21:00"
+        }
+      ],
+      "servesCuisine": ["Korean Fried Chicken", "Asian Fusion", "Indonesian Food"],
+      "priceRange": "Rp 13.000 - Rp 30.000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "250",
+        "bestRating": "5"
+      },
+      "menu": "https://yayowings.com/#menu",
+      "image": "https://yayowings.com/images/hero/hero.png"
+    }
+    </script>
+    
+    <!-- Structured Data - FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Berapa harga Korean Wings di Yayo Wings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Harga Korean Wings di Yayo Wings mulai dari Rp 13.000 untuk paket hemat hingga Rp 30.000 untuk paket premium."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dimana lokasi Yayo Wings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yayo Wings berlokasi di Jl. Teuku Umar, Bogorame, Demak, Jawa Tengah."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah Yayo Wings tersedia di aplikasi ojek online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya, Yayo Wings tersedia di GoFood, GrabFood, dan ShopeeFood untuk pemesanan online."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa jam operasional Yayo Wings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yayo Wings buka setiap hari dari jam 10:00 sampai 21:00 WIB."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Structured Data - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Yayo Wings",
+      "description": "Restoran Korean Wings terenak di Demak",
+      "url": "https://yayowings.com/",
+      "telephone": "+62 813-2906-4923",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Jl. Teuku Umar, Bogorame",
@@ -30,10 +146,14 @@
         "addressRegion": "Jawa Tengah",
         "addressCountry": "ID"
       },
-      "telephone": "+62 813-2906-4923",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-6.8945",
+        "longitude": "110.6389"
+      },
       "openingHours": "Mo-Su 10:00-21:00",
-      "servesCuisine": "Korean Fried Chicken",
-      "priceRange": "Rp 13.000 - Rp 30.000"
+      "priceRange": "Rp 13.000 - Rp 30.000",
+      "image": "https://yayowings.com/images/hero/hero.png"
     }
     </script>
   </head>
