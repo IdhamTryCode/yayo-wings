@@ -109,7 +109,7 @@ export function HeroSection() {
                         className="mt-6 text-white/80 font-body text-lg sm:text-xl max-w-lg mx-auto leading-relaxed"
                     >
                         Bumbu korea autentik, ayam goreng renyah, harga mulai{' '}
-                        <span className="text-white font-bold">Rp 3.000</span>
+                        <span className="text-white font-bold">Rp 13.000</span>
                     </motion.p>
 
                     {/* CTA Buttons */}
