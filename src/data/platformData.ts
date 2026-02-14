@@ -14,7 +14,7 @@ export const platforms: Platform[] = [
         name: 'GoFood',
         logo: '/images/platforms/gofood.svg',
         link: 'https://gofood.link/a/LLYU71h',
-        color: '#00AA13',
+        color: '#25D366',
         bgColor: 'rgba(0, 0, 0, 0.03)',
     },
     {
@@ -22,7 +22,7 @@ export const platforms: Platform[] = [
         name: 'GrabFood',
         logo: '/images/platforms/grabfood.svg',
         link: 'https://r.grab.com/g/6-20260214_232908_AF4EEC52E2B444309F96C343AAD03976_MEXMPS-6-C6LGEU43VUAESA',
-        color: '#00B14F',
+        color: '#25D366',
         bgColor: 'rgba(0, 0, 0, 0.03)',
     },
     {
@@ -30,7 +30,7 @@ export const platforms: Platform[] = [
         name: 'ShopeeFood',
         logo: '/images/platforms/shopeefood.svg',
         link: 'https://shopee.co.id/universal-link/now-food/shop/21950409?deep_and_deferred=1&shareChannel=copy_link',
-        color: '#EE4D2D',
+        color: '#25D366',
         bgColor: 'rgba(0, 0, 0, 0.03)',
     },
 ];
@@ -42,6 +42,6 @@ export const contactInfo = {
     hours: '09:00 - 21:00 WIB (Setiap Hari)',
     instagram: '@yayo_wings',
     instagramLink: 'https://instagram.com/yayo_wings',
-    mapsLink: 'https://maps.app.goo.gl/5a823fe373fb868b',
+    mapsLink: 'https://share.google/akpqj2yEThAFeDrKT',
     mapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9089669084647!2d110.62652267573921!3d-6.901489667541713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70eb9d53c3ab89%3A0x5a823fe373fb868b!2sYayo%20Wings!5e0!3m2!1sid!2sid!4v1771081181400!5m2!1sid!2sid',
 };
